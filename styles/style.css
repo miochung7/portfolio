@@ -256,6 +256,10 @@ header {
   }
 }
 /* Section 3 - Projects */
+#section3 .projects--grid {
+  display: grid;
+  grid-gap: 0.5em;
+}
 #section3 .section--title::before {
   content: "";
   position: absolute;
@@ -265,6 +269,42 @@ header {
   top: 65%;
   left: 11%;
   z-index: -1;
+}
+#section3 .projects--cards {
+  border: 1px solid #edf6f9;
+  border-radius: 10px;
+  text-align: center;
+  padding: 0.8em;
+}
+#section3 .projects--cards .projects--info {
+  padding: 0.5em 0;
+  text-align: left;
+}
+#section3 .projects--cards .projects--links {
+  display: flex;
+  justify-content: center;
+}
+#section3 .projects--cards a {
+  border: 1px solid #edf6f9;
+  border-radius: 5px;
+  text-decoration: none;
+  padding: 0.5em;
+  margin: 0.5em;
+  color: #edf6f9;
+  background: linear-gradient(to right, white 50%, #afd8d4 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  transition: all 0.5s ease-out;
+}
+#section3 .projects--cards a:hover {
+  color: black;
+  background-position: left bottom;
+}
+
+@media (min-width: 700px) {
+  .projects--grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

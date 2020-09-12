@@ -304,6 +304,11 @@ header {
 /* Section 3 - Projects */
 
 #section3 {
+	.projects--grid {
+		display: grid;
+		// grid-template-columns: 1fr;
+		grid-gap: 0.5em;
+	}
 	.section--title::before {
 		content: '';
 		position: absolute;
@@ -313,5 +318,46 @@ header {
 		top: 65%;
 		left: 11%;
 		z-index: -1;
+	}
+
+	.projects--cards {
+		border: 1px solid $main-font-color;
+		border-radius: 10px;
+		text-align: center;
+		padding: 0.8em;
+
+		.projects--info {
+			padding: 0.5em 0;
+			text-align: left;
+		}
+
+		.projects--links {
+			display: flex;
+			justify-content: center;
+		}
+
+		a {
+			border: 1px solid $main-font-color;
+			border-radius: 5px;
+			text-decoration: none;
+			padding: 0.5em;
+			margin: 0.5em;
+			color: $main-font-color;
+			background: linear-gradient(to right, white 50%, #afd8d4 50%);
+			background-size: 200% 100%;
+			background-position: right bottom;
+			transition: all .5s ease-out;
+
+			&:hover {
+				color: black;
+				background-position: left bottom;
+			}
+		}
+	}
+}
+
+@media (min-width: 700px) {
+	.projects--grid {
+		grid-template-columns: repeat(3, 1fr);
 	}
 }
