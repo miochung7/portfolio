@@ -245,73 +245,73 @@ header {
 
 /* Section 2 - About me */
 
-// #section2 {
-// 	.section--title {
-// 		&::before {
-// 			content: '';
-// 			position: absolute;
-// 			height: 12px;
-// 			width: 60%;
-// 			background: $main-pink;
-// 			top: 65%;
-// 			left: 11%;
-// 			z-index: -1;
-// 		}
-// 	}
-// 	.container--about__me {
-// 		text-align: center;
-// 		margin: 7em auto;
-// 	}
-// 	.about__me--image {
-// 		border-radius: 80%;
-// 		filter: grayscale(80%);
-// 		margin: 2em 0;
-// 	}
+#section2 {
+	.section--title {
+		&::before {
+			content: '';
+			position: absolute;
+			height: 12px;
+			width: 60%;
+			background: $main-pink;
+			top: 65%;
+			left: 11%;
+			z-index: -1;
+		}
+	}
+	.container--about__me {
+		text-align: center;
+		margin: 7em auto;
+	}
+	.about__me--image {
+		border-radius: 80%;
+		filter: grayscale(80%);
+		margin: 2em 0;
+	}
 
-// 	.about__me--text {
-// 		margin: 2em;
-// 		text-align: justify;
+	.about__me--text {
+		margin: 2em;
+		text-align: justify;
 
-// 		p {
-// 			font-size: 1.25rem;
-// 			padding-bottom: 2em;
-// 		}
-// 	}
-// }
+		p {
+			font-size: 1.25rem;
+			padding-bottom: 2em;
+		}
+	}
+}
 
-// @media (min-width: 700px) {
-// 	.section--title {
-// 		// margin: auto 2em;
-// 	}
-// 	.container--about__me {
-// 		display: flex;
-// 		justify-content: space-around;
-// 		align-items: center;
-// 	}
+@media (min-width: 700px) {
+	.section--title {
+		// margin: auto 2em;
+	}
+	.container--about__me {
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+	}
 
-// 	.about__me--image {
-// 		width: 40%;
-// 	}
+	.about__me--image {
+		width: 40%;
+	}
 
-// 	.about__me--text {
-// 		display: flex;
-// 		flex-direction: column;
+	.about__me--text {
+		display: flex;
+		flex-direction: column;
 
-// 		max-width: 500px;
-// 	}
-// }
+		max-width: 500px;
+	}
+}
 
-// /* Section 3 - Projects */
+/* Section 3 - Projects */
 
-// #section3 {
-// 	.section--title::before {
-// 		content: '';
-// 		position: absolute;
-// 		height: 12px;
-// 		width: 60%;
-// 		background: $main-pink;
-// 		top: 65%;
-// 		left: 11%;
-// 		z-index: -1;
-// 	}
-// }
+#section3 {
+	.section--title::before {
+		content: '';
+		position: absolute;
+		height: 12px;
+		width: 60%;
+		background: $main-pink;
+		top: 65%;
+		left: 11%;
+		z-index: -1;
+	}
+}

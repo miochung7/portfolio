@@ -210,5 +210,61 @@ header {
   }
 }
 /* Section 2 - About me */
+#section2 .section--title::before {
+  content: "";
+  position: absolute;
+  height: 12px;
+  width: 60%;
+  background: #ffddd2;
+  top: 65%;
+  left: 11%;
+  z-index: -1;
+}
+#section2 .container--about__me {
+  text-align: center;
+  margin: 7em auto;
+}
+#section2 .about__me--image {
+  border-radius: 80%;
+  filter: grayscale(80%);
+  margin: 2em 0;
+}
+#section2 .about__me--text {
+  margin: 2em;
+  text-align: justify;
+}
+#section2 .about__me--text p {
+  font-size: 1.25rem;
+  padding-bottom: 2em;
+}
+
+@media (min-width: 700px) {
+  .container--about__me {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .about__me--image {
+    width: 40%;
+  }
+
+  .about__me--text {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+  }
+}
+/* Section 3 - Projects */
+#section3 .section--title::before {
+  content: "";
+  position: absolute;
+  height: 12px;
+  width: 60%;
+  background: #ffddd2;
+  top: 65%;
+  left: 11%;
+  z-index: -1;
+}
 
 /*# sourceMappingURL=style.css.map */
