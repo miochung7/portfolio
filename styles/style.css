@@ -49,6 +49,7 @@ body {
   font-family: "Roboto", sans-serif;
   font-weight: 300;
   line-height: 1.7;
+  scroll-behavior: smooth;
 }
 
 /* Layout */
@@ -74,6 +75,7 @@ img {
 
 .section--title {
   position: relative;
+  margin-bottom: 1em;
 }
 
 /* Navigation */
@@ -222,7 +224,7 @@ header {
 }
 #section2 .container--about__me {
   text-align: center;
-  margin: 7em auto;
+  margin: 5em auto;
 }
 #section2 .about__me--image {
   border-radius: 80%;
@@ -305,6 +307,64 @@ header {
   .projects--grid {
     grid-template-columns: repeat(3, 1fr);
   }
+}
+/* Section 4 - Contact */
+#section4 .contact {
+  text-align: center;
+  padding-top: 2em;
+  max-width: 500px;
+}
+#section4 .section--title::before {
+  content: "";
+  position: absolute;
+  height: 12px;
+  width: 60%;
+  background: #ffddd2;
+  top: 65%;
+  left: 11%;
+  z-index: -1;
+}
+#section4 p {
+  font-size: 1.2rem;
+}
+#section4 .contact__form {
+  width: 90%;
+  margin: 3em auto 6em;
+}
+#section4 input[type=text],
+#section4 input[type=email],
+#section4 input[type=submit],
+#section4 textarea {
+  border: 1px solid #edf6f9;
+  border-radius: 5px;
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  width: 100%;
+  outline: none;
+  padding: 0.8em;
+}
+#section4 input::placeholder,
+#section4 textarea::placeholder {
+  color: #83c5be;
+}
+#section4 #submit {
+  background: #ffddd2;
+  border: 1px solid #ffddd2;
+  color: #7fa6af;
+  text-transform: uppercase;
+  cursor: pointer;
+  background: linear-gradient(to right, white 50%, #ffddd2 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  transition: all 0.5s ease-out;
+}
+#section4 #submit:hover {
+  color: black;
+  border: white;
+  background-position: left bottom;
+}
+#section4 .form__input + .form__input {
+  margin-top: 0.8em;
 }
 
 /*# sourceMappingURL=style.css.map */
