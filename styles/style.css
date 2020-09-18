@@ -288,6 +288,11 @@ header {
   text-align: center;
   padding: 0.8em;
 }
+#section3 .projects--cards .gif {
+  border-radius: 10px;
+  margin-top: 1em;
+  text-align: center;
+}
 #section3 .projects--cards .projects--info {
   padding: 0.5em 0;
   text-align: left;
