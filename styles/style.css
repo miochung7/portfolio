@@ -270,6 +270,7 @@ header {
 /* Section 3 - Projects */
 #section3 .projects--grid {
   display: grid;
+  grid-template-columns: repeat(3, 1fr);
   grid-gap: 0.5em;
 }
 #section3 .section--title::before {
@@ -287,11 +288,16 @@ header {
   border-radius: 10px;
   text-align: center;
   padding: 0.8em;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
 }
 #section3 .projects--cards .gif {
   border-radius: 10px;
   margin-top: 1em;
   text-align: center;
+  max-height: 300px;
+  width: 100%;
 }
 #section3 .projects--cards .projects--info {
   padding: 0.5em 0;
