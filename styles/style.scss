@@ -64,7 +64,7 @@ body {
 /* Layout */
 
 .container {
-	width: 80%;
+	width: 90%;
 	margin: 0 auto;
 	max-width: 1200px;
 	position: relative;
@@ -381,7 +381,7 @@ header {
 	border-radius: 10px;
 	margin-top: 1em;
 	text-align: center;
-	height: 180px;
+	height: 230px;
 	// background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
@@ -402,10 +402,6 @@ header {
 @media (min-width: 700px) {
 	#section3 .projects--grid {
 		grid-template-columns: repeat(3, 1fr);
-	}
-
-	.gif__container {
-		height: 230px;
 	}
 }
 
