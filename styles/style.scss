@@ -319,7 +319,7 @@ header {
 #section3 {
 	.projects--grid {
 		display: grid;
-		grid-template-columns: repeat(3, 1fr);
+		grid-template-columns: 1fr;
 		grid-gap: 0.5em;
 	}
 	.section--title::before {
@@ -342,13 +342,11 @@ header {
 		justify-content: space-between;
 		flex-direction: column;
 
-		.gif {
-			border-radius: 10px;
-			margin-top: 1em;
-			text-align: center;
-			max-height: 300px;
-			width: 100%;
-		}
+		// .gif {
+		// 	border-radius: 10px;
+		// 	margin-top: 1em;
+		// 	text-align: center;
+		// }
 		.projects--info {
 			padding: 0.5em 0;
 			text-align: left;
@@ -379,9 +377,35 @@ header {
 	}
 }
 
+.gif__container {
+	border-radius: 10px;
+	margin-top: 1em;
+	text-align: center;
+	height: 180px;
+	// background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	color: transparent;
+	width: 100%;
+}
+
+#restaurant {
+	background-image: url(/images/restaurant2.gif);
+}
+#countdown {
+	background-image: url(/images/countdown3.gif);
+}
+#movieapi {
+	background-image: url(/images/movieapi3.gif);
+}
+
 @media (min-width: 700px) {
-	.projects--grid {
+	#section3 .projects--grid {
 		grid-template-columns: repeat(3, 1fr);
+	}
+
+	.gif__container {
+		height: 230px;
 	}
 }
 

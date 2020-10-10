@@ -270,7 +270,7 @@ header {
 /* Section 3 - Projects */
 #section3 .projects--grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: 1fr;
   grid-gap: 0.5em;
 }
 #section3 .section--title::before {
@@ -291,13 +291,6 @@ header {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
-}
-#section3 .projects--cards .gif {
-  border-radius: 10px;
-  margin-top: 1em;
-  text-align: center;
-  max-height: 300px;
-  width: 100%;
 }
 #section3 .projects--cards .projects--info {
   padding: 0.5em 0;
@@ -324,9 +317,36 @@ header {
   background-position: left bottom;
 }
 
+.gif__container {
+  border-radius: 10px;
+  margin-top: 1em;
+  text-align: center;
+  height: 180px;
+  background-position: center;
+  background-size: cover;
+  color: transparent;
+  width: 100%;
+}
+
+#restaurant {
+  background-image: url(/images/restaurant2.gif);
+}
+
+#countdown {
+  background-image: url(/images/countdown3.gif);
+}
+
+#movieapi {
+  background-image: url(/images/movieapi3.gif);
+}
+
 @media (min-width: 700px) {
-  .projects--grid {
+  #section3 .projects--grid {
     grid-template-columns: repeat(3, 1fr);
+  }
+
+  .gif__container {
+    height: 230px;
   }
 }
 /* Section 4 - Contact */
